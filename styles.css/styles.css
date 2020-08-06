@@ -70,7 +70,7 @@
         top: 4.2%;
         align-self: center;
         width: 97%;
-        height: auto;
+        height: 600px;
         z-index: -1;
         display: flex;
         justify-content: space-around;
@@ -83,7 +83,7 @@
 
   
     .body-box .cards {
-        
+        overflow: hidden;
         background-color: rgb(199, 239, 247);
         opacity: 1;
         margin-top: 20px;
@@ -132,7 +132,7 @@
     }
   
     .body-box .cards p{
-         
+        
         font-size: 20px;
         margin-top: 5px;
         cursor: default;
@@ -260,12 +260,7 @@
     }
 
 
-    .contactmeblock-active{
-        
-    }
-
-
-
+    
 
 
     .socialimgs {
@@ -455,6 +450,7 @@
   
   
   .nav-links{
+    overflow-y: visible;
     position: absolute;
     list-style: none;
     text-align: center;
@@ -601,6 +597,9 @@
        font-size: 47px;
        z-index: 1;
        letter-spacing: 4px;
+       
+       width: 300px;
+       
        
        
        
@@ -838,8 +837,10 @@
 
 
       .imgimg{
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: -20px;
         
       }
 
@@ -864,15 +865,84 @@
   @media only screen and (max-height: 760px ) { 
 
 
-        .body-box{
-            background-color: red;
-        }
+       
 
-        .body-box .card-content p {
-            display: none;
+        .body-box .cards {
+           cursor: pointer;
         }
         .readmorediv{
-            margin-top: 200px;
+           display: none;
         }
 
+        .cards .card-img {
+            padding-bottom: 10px;
+        }
+        
+        
+        
+        .cards .card-content p {
+            font-size: 5px;
+           cursor: pointer;
+            
+            height: 30px;
+        }
+  
+    }
+
+
+  @media only screen and (max-height: 655px ){
+
+    
+  
+
+
+  .readmorediv {
+        display: none;
   }
+
+  .body-box .cards {
+      cursor: pointer;
+      
+  }
+  
+  .cards .card-content{
+    top: -20px;
+    
+   /*  overflow-y: scroll; */
+    height: 200px;
+    width: 5px;
+    overflow-x: hidden;
+    cursor: pointer;
+  }
+  
+  .cards .card-img{
+      margin-bottom: 30px;
+  }
+  
+  .cards .card-content p {
+      font-size: 5px;
+     cursor: pointer;
+      
+      height: 30px;
+  }
+
+  .cards .card-content a {
+    width: 200px;
+}
+
+
+
+
+/* .cards .card-content::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+}
+
+.cards .card-content::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+ */
+
+  } 
