@@ -461,12 +461,25 @@
     } 
 
        
-    .contact-button-div .contact-button {
+    .contact-button-div .contact-button  {
         border: 2px solid rgb(42, 175, 82);
         background-color: rgb(19, 18, 18);
+       
         color: rgb(42, 175, 82);
         padding: 5px 20px;
         font-size: 15px;
+        cursor: pointer;
+        width: 500px;
+        
+      }
+
+          
+    .contact-button-div .contact-button a {
+       padding-top: 10px;
+        width: 120px;
+        height: 100%;
+       
+        font-size: 14px;
         cursor: pointer;
        
         
@@ -1004,6 +1017,14 @@
       }
      
 
+      .isim{
+          font-size: 20px;
+      }
+      .meslek{
+          font-size: 20px;
+      }
+
+
       
   }
   
@@ -1023,6 +1044,7 @@
 
     .contact-button-div{
         right: 20%;
+        margin-top: 3px;
     }
     
        
