@@ -882,11 +882,26 @@
   }
 
   @media only screen and (max-width: 1480px ){   /* 1580 */
-      body{
+      
+    .burger{
+       margin-top: 3px;
+       margin-right: 8px;
+    }
+    
+    
+    
+    
+    
+    
+    body{
             height: 80vh;
 
       }
 
+      
+      
+      
+      
       .bg-img img {
         
         object-fit: cover;
@@ -1096,7 +1111,7 @@
     
 
     .isim{
-        color: red;
+        
     }
 
 
