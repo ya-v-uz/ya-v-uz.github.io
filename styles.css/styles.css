@@ -52,7 +52,7 @@
     }
     
     .isim{
-        display:none;
+      
         position: absolute;
         top: 20%;
         left: 10%;
@@ -993,6 +993,11 @@
   
 
   @media only screen and (max-height: 760px ) { 
+    
+    
+    
+    
+    
     .burger{
           
         margin-right: 16px;
@@ -1032,7 +1037,7 @@
   @media only screen and (max-height: 655px ){
 
     
-  
+   
 
 
   .readmorediv {
@@ -1085,3 +1090,21 @@
  */
 
   } 
+
+
+  @media only screen and (max-width: 538px ) { 
+    
+
+    .isim{
+        color: red;
+    }
+
+
+    .bg-img{
+        overflow: hidden;
+    }
+
+
+
+
+  }
