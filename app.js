@@ -21,13 +21,31 @@ const navSlide = () => {
  }
  
 
+    function bodyboxslide() {
+
+        var bodybox = document.querySelector = (".body-box");
+        var boxposition = document.getBoundingClientRect().top; 
+        var scrposition = window.innerHeight / 2;
+
+        if(scrposition > boxposition) {
+            bodybox.classList.add('body-b0x-appear');
+        }
+
+    }
+
+
+     window.addEventListener('scroll', bodyboxslide());
+
+
+
+
     const socialSlide = () => {
     let social = false; 
-    var skype = document.getElementById("skype")
-    var discord = document.getElementById("discord") 
-    var mail = document.getElementById("mail") 
-    var  telegram = document.getElementById("telegram") 
-    var spotify = document.getElementById("spotify") 
+    var skype = document.getElementById("skype");
+    var discord = document.getElementById("discord") ;
+    var mail = document.getElementById("mail");
+    var  telegram = document.getElementById("telegram");
+    var spotify = document.getElementById("spotify"); 
    
     const contactblock = document.querySelector(".contactmeblock");
     const contactactive = document.querySelector(".contactmeblock-active");
@@ -40,12 +58,13 @@ const navSlide = () => {
     
     });
 
-
-
-
  } 
 
-  
+    
+
+
+
+
 
 
  function go404() {
@@ -90,7 +109,7 @@ const popUp = () => {
  
  
 
- navSlide();
+navSlide();
  popUp();
  
 

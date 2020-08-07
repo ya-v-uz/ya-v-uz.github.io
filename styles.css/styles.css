@@ -20,6 +20,7 @@
       align-items :center;
      background: rgb(236, 228, 228);
      background: rgb(31,46,72);
+    
       flex-wrap: wrap;
       
       z-index: 0;
@@ -39,7 +40,6 @@
 
     .bg-img {
         object-fit: cover;
-        
         min-height: 59%;
         width: 100%;
         position: absolute;
@@ -49,6 +49,8 @@
         display: flex;
         align-content: center;
         justify-content: space-evenly;
+       /* clip-path: circle(940px at center 0);  */
+        
         
     }
     
@@ -130,9 +132,20 @@
         flex-wrap: unset;
         padding-right: 20px;
         padding-left: 20px;
+        
       
     } 
 
+   
+    .body-box-appear{
+        opacity: 1;
+    }
+   
+   
+   
+   
+   
+   
     .headerbox {
        display: none;
         padding-left: 25px;
@@ -519,7 +532,7 @@
         right: 6%;
         margin-right: 8px;
         height: 35px;
-        width: 180px;
+        width: 160px;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -531,7 +544,7 @@
     }
 
     .contact-button-div .contact-button{
-        padding-right: 5px;
+        padding-right: 10px;
         border-radius: 10px;
         padding-top: 7px;
         
@@ -550,7 +563,7 @@
         background-color: rgb(19, 18, 18);
        
         color: rgb(42, 175, 82);
-        padding: 5px 20px;
+        padding: 5px 10px;
         font-size: 15px;
         cursor: pointer;
         width: 500px;
@@ -1050,7 +1063,7 @@
   
    .card-content{
     position: absolute;
-    top: -12%;
+    top: -6%;
     left: 0;
     
     height: 100px;
@@ -1060,6 +1073,11 @@
     padding-bottom: 10px;
     
 
+  }
+
+
+  .card-content a{
+     
   }
   
   .cards .card-img{
