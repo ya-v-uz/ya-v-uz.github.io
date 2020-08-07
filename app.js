@@ -34,7 +34,7 @@ const navSlide = () => {
     }
 
 
-     window.addEventListener('scroll', bodyboxslide());
+    
 
 
 
@@ -111,7 +111,7 @@ const popUp = () => {
 
 navSlide();
  popUp();
- 
+ //window.addEventListener('scroll', bodyboxslide());
 
 
  
