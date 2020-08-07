@@ -41,14 +41,44 @@ const navSlide = () => {
     });
 
 
+
+
  } 
 
   
 
-  
-  
 
+ function go404() {
      
+    
+    window.location.replace("404.html");
+
+ 
+}
+  
+  
+ function returnHome() {
+    window.location.replace("index.html");
+ }
+     
+
+const popUp = () => {
+    const card= document.getElementsByClassName(".cards")
+    const bodybox = document.querySelectorAll(".body-box")
+
+
+    card.addEventListener("click", () => {
+
+        bodybox.classList.toggle(".body-box .cards1");
+
+    });
+
+
+
+
+
+
+}
 
 
      
@@ -61,7 +91,7 @@ const navSlide = () => {
  
 
  navSlide();
- 
+ popUp();
  
 
 
