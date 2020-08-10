@@ -104,7 +104,8 @@ const popUp = () => {
   function displayModal(){
     var modal = document.getElementById("modal");
     var card = document.getElementById("card");
-    var close = document.getElementById("close");
+    var close = document.getElementById("popup-burger");
+    
     card.onclick = function() {
         modal.style.display = "block";
         
@@ -126,7 +127,7 @@ const popUp = () => {
  function displayModal1(){
     var modal1 = document.getElementById("modal1");
     var card1 = document.getElementById("card1");
-    var close1 = document.getElementById("close1");
+    var close1 = document.getElementById("popup-burger1");
     card1.onclick = function() {
         modal1.style.display = "block";
         
@@ -148,7 +149,7 @@ const popUp = () => {
 function displayModal2(){
     var modal2 = document.getElementById("modal2");
     var card2 = document.getElementById("card2");
-    var close2 = document.getElementById("close2");
+    var close2 = document.getElementById("popup-burger2");
     card2.onclick = function() {
         modal2.style.display = "block";
         
@@ -171,7 +172,7 @@ function displayModal2(){
 function displayModal3() {
     var modal3 = document.getElementById("modal3");
     var card3 = document.getElementById("card3");
-    var close3 = document.getElementById("close3");
+    var close3 = document.getElementById("popup-burger3");
     card3.onclick = function() {
         modal3.style.display = "block";
         
@@ -193,7 +194,7 @@ function displayModal3() {
 function displayModal4() {
     var modal4 = document.getElementById("modal4");
     var card4 = document.getElementById("card4");
-    var close4 = document.getElementById("close4");
+    var close4 = document.getElementById("popup-burger4");
     
     
   

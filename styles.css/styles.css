@@ -261,10 +261,43 @@
 
 
    
+    .popup-burger{
+        position: absolute;
+    
+        top: 7%;
+        right: 7%;
+        width: 4%;
+        height: 6%;
+        cursor: pointer;
+    }
+
+    
+
+    .burgerpiece22{
+        border-radius: 5px;
+        margin-top: 4px;
+         width: 150%;
+        height: 4px;
+        /* background-color:#00CAE7; */
+        background-color: rgb(0, 0, 0);
+        transition: all 0.1s ease-in-out;
+        transform: translateY(8px) rotate(45deg) scale(1.1);
+  }
+  .burgerpiece33{
+        border-radius: 5px;
+        margin-top: 4px;
+        width: 150%;
+         height: 4px;
+       /*  background-color: #00CAE7; */
+        background-color: rgb(0, 0, 0);
+        transition: all 0.1s ease-in-out;
+        transform: rotate(-45deg) scale(1.1);
+  }
 
 
     .close{
-    float: right;
+    
+        float: right;
     
     font-size: 2vw;
     font-weight: bold;
@@ -1421,7 +1454,11 @@
 
   @media only screen and (max-width: 538px ) { 
     
-
+    
+    .modal-content{
+        top: 20%;
+        height: 40%;
+    }
      
     
     .burger{
