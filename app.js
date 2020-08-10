@@ -8,7 +8,8 @@ const navSlide = () => {
      
     burger.addEventListener("click", () => {
         nav.classList.toggle("nav-active");
-       
+
+        
         
     
     
@@ -100,17 +101,168 @@ const popUp = () => {
 }
 
 
-     
-     
+  function displayModal(){
+    var modal = document.getElementById("modal");
+    var card = document.getElementById("card");
+    var close = document.getElementById("close");
+    card.onclick = function() {
+        modal.style.display = "block";
+        
+    }
+    close.onclick = function() {
+        modal.style.display = "none";
+    }
+    
+    window.onclick = function(clicker) {
+       
+        if(clicker.target == modal) {
+        modal.style.display = "none";
+       
+    }
+    }          
   
-  
-  
- 
- 
- 
+}
 
+ function displayModal1(){
+    var modal1 = document.getElementById("modal1");
+    var card1 = document.getElementById("card1");
+    var close1 = document.getElementById("close1");
+    card1.onclick = function() {
+        modal1.style.display = "block";
+        
+    }
+    close1.onclick = function() {
+        modal1.style.display = "none";
+    }
+    
+    window.onclick = function(clicker) {
+       
+        if(clicker.target == modal1) {
+        modal1.style.display = "none";
+       
+    }
+    }          
+  
+} 
+
+function displayModal2(){
+    var modal2 = document.getElementById("modal2");
+    var card2 = document.getElementById("card2");
+    var close2 = document.getElementById("close2");
+    card2.onclick = function() {
+        modal2.style.display = "block";
+        
+    }
+    close2.onclick = function() {
+        modal2.style.display = "none";
+    }
+    
+    window.onclick = function(clicker) {
+       
+        if(clicker.target == modal2) {
+        modal2.style.display = "none";
+       
+    }
+    }          
+  
+} 
+
+
+function displayModal3() {
+    var modal3 = document.getElementById("modal3");
+    var card3 = document.getElementById("card3");
+    var close3 = document.getElementById("close3");
+    card3.onclick = function() {
+        modal3.style.display = "block";
+        
+    }
+    close3.onclick = function() {
+        modal3.style.display = "none";
+    }
+    
+    window.onclick = function(click) {
+       
+        if(click.target == modal3) {
+        modal3.style.display = "none";
+       
+    }
+    }          
+  
+} 
+
+function displayModal4() {
+    var modal4 = document.getElementById("modal4");
+    var card4 = document.getElementById("card4");
+    var close4 = document.getElementById("close4");
+    
+    
+  
+    
+    card4.onclick = function() {
+        modal4.style.display = "block";
+        isPop = true;
+        
+    }
+    
+    close4.onclick = function() {
+        modal4.style.display = "none";
+        isPop = false;
+    }         
+    
+    window.onclick = function() {
+       
+        if(click.target == modal3) {
+        modal4.style.display = "none";
+    }
+    
+    
+
+}          
+  
+} 
+
+
+
+function animateBurger() {
+    var toggle = false
+    var burger = document.getElementById("burgero");
+    var burger1 = document.getElementById("burger1");
+    var burger2 = document.getElementById("burger2");
+    var burger3 = document.getElementById("burger3");
+
+    burger.addEventListener("click" , () => {
+        
+        if(toggle == false ) { 
+        burger1.style.opacity = 0; 
+        burger2.style.transform = "translateY(8px) rotate(45deg) scale(1.2) ";
+        burger3.style.transform = "rotate(-45deg) scale(1.2)"; 
+       
+        toggle = true;
+        }
+        else{
+        burger1.style.opacity= 1; 
+        burger2.style.transform = "rotate(-180deg)";
+         burger3.style.transform = "rotate(-180deg)"; 
+        toggle = false;
+        }
+   
+    });
+
+     
+
+}
+  
+ 
+ 
+ animateBurger()
+displayModal()
+displayModal1()
+displayModal2()
+displayModal3()
+displayModal4()
 navSlide();
- popUp();
+
+
  //window.addEventListener('scroll', bodyboxslide());
 
 
