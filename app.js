@@ -252,10 +252,61 @@ function animateBurger() {
      
 
 }
+
+
+function firstAnime() {
+   
+    
+
+    anime({ //alt
+
+         targets:'#greenrain1',
+         scaleY: '1200',
+         translateY: '-150',
+         direction:'alternate',
+         duration:11000,
+         
+         easing: 'easeInOutQuad'
+
+
+    });
+
+    anime({ //üst
+        targets:'#greenrain2',
+        scaleY: '1200',
+        translateY: '200',
+        
+        
+        
+        
+        duration:12000,
+        
+        easing: 'easeInOutQuad' 
+
+
+    });
+
+    anime({
+        targets:'#greenrain3',
+        width: '200',
+        translateX: '400',
+        
+        
+        
+        duration:3000,
+      
+        easing: 'easeInOutQuad' 
+
+
+    });
+
+  }   
+
+
   
  
- 
- animateBurger()
+ firstAnime()
+animateBurger()
 displayModal()
 displayModal1()
 displayModal2()
