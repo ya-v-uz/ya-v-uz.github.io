@@ -18,172 +18,322 @@
       display: flex;
       justify-content: center;
       align-items :center;
-     background: rgb(236, 228, 228);
-     background: rgb(31,46,72);
-     background: linear-gradient(180deg,rgb(31,46,72) 0%, #020808 61%, rgb(31,46,72) 85%);
-    
+     background: black;
+    flex-direction: column;
       flex-wrap: wrap;
       
       z-index: 0;
+      scroll-behavior: smooth;
       
-     /* 
-      background-image: url(../imgs/arcticmoun.jpg);
-      background-size: 100% 60%;
-      background-repeat: no-repeat;     */ 
-    /*
-       background-image: url(../imgs/spacebg.jpg);
-       background-size: 100% 100%;
-       background-repeat: no-repeat;    */
-  
+     
   
     }
     
+    .scrollnav{
+        width: 30px;
+        height: 140px;
+        position: absolute;
+        right: 2%;
+        top: 20%;
+        scroll-behavior: smooth;
+        
+        
+    }
+
+    .scrollnav ul{
+        list-style: none;
+        scroll-behavior: smooth;
+    }
+
+    .scrollnav a {
+        
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        opacity: 0.3;
+        font-size: 30px;
+        transition: all 200ms ease-in-out;
+        scroll-behavior: smooth;
+        cursor:pointer;
+        
+
+    } 
+
+    
+
 
     .bg-img {
         object-fit: cover;
         min-height: 59%;
         width: 100%;
         position: absolute;
-        top:0;
+        top:0%;
         left:0;
-        z-index: -1;
+        z-index: -4;
         display: flex;
         align-content: center;
         justify-content: space-evenly;
-       /* clip-path: circle(940px at center 0);  */
+        flex-direction: column;
+        /*clip-path: circle(500px at center 0);  */
         
+        background-image: url(../imgs/wp4020124-dedsec-wallpapers\ copy.jpg);
+        background-size: 100% 44%; 
+        background-position-y: -10rem;
+        background-repeat: no-repeat;
+        animation: animate1 4s ease-in-out;
+        object-fit: cover;
+         
         
-    }
+    }   
 
-    .green-rain1{
-      position: absolute;
-      bottom: 44%;
-      left: 0%;
-      border-radius: 5px;
-      width: 100%;
-      height: 10px;
-      
-      /*background-color:#00CAE7; */
-      background-color: rgb(42, 175, 82);
-     
-      z-index: -3;
-     
-    }
-
-
-    .green-rain2{
-        position: absolute;
-        top: 3%;
-        left: 00%;
-        
+    .blacksection{
+        background: black;
         width: 100%;
-        height: 10px;
-        
-        /*background-color:#00CAE7; */
-        background-color: rgb(42, 175, 82);
-        
-        z-index: -3;
-       
-      }
-
-      .green-rain3{
-        position: absolute;
-        top: 28%;
-        left: 0%;
-        margin-top: 20px;
-        margin-left: 80px;
-        width: 60%;
-        height: 2px;
-        
-        /*background-color:#00CAE7; */
-        background-color: rgb(42, 175, 82);
-        
-        z-index: -3;
-       
-      }
-    
-
-      .green-rain4{
-        position: absolute;
-        top: 20%;
-        left: 60%;
-       
-        width: 12%;
-        height: 10px;
-        
-        /*background-color:#00CAE7; */
-        background-color: rgb(42, 175, 82);
-        opacity: 0.5;
-        z-index: -3;
-       
-      }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    .isim{
-      
-        position: absolute;
-        top: 20%;
-        left:10%;
-        font-size: 40px;
-         color: rgb(213, 233, 233);
-        letter-spacing: 10px;
-        font-family: 'Orbitron', sans-serif;
-
-    }
-
-    .meslek{
-        margin-top: 20px;
-        position: absolute;
-        top: 23%;
-        left: 13%;
-        font-size: 40px;
-        color: rgb(213, 233, 233);
-        letter-spacing: 10px;
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    
-
-
-   .firstscreen{
-        display: none;
-        margin-right: 600px;
-        margin-top: 400px;
-        margin-left: 200px;
-        margin-bottom: 200px;
-        height: 400px;
-        width: 600px;
-        background-color: black;
-        opacity: 0.8;
-        z-index: 0;
-   }
-   
-   
-    /* .body-box{
-        background-color: rgb(250, 242, 242);
-        border-radius: 15px;
-        opacity: 0.8;
-        position: absolute;
-        top: 10%;
-        align-self: center;
-        width: 1300px;
-        height: 700px;
-        z-index: -1;
+        height: 44em;
+        flex-basis: 100%;
+        position: relative;
+        top: 28em;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-      
-    } */
+        flex-direction: row;
+        cursor:default;
+       
     
+    }
+
+
+    .blackbaslik{
+        
+        
+        
+        
+      
+        margin-top: 3.5em;
+        margin-left: 6em;
+        width: 44%;
+        
+        color: rgb(213, 233, 233);
+      
+    
+    }
+
+    .blackbaslik  h1{
+      
+      
+        letter-spacing: 10px;
+        
+        color: white;
+        
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3.5rem;
+       
+        letter-spacing: 0.03em;
+        white-space: wrap;
+
+    }
+
+
+    .blackyazi{
+      
+        margin-top: 6.5em;
+        margin-left: 12em;
+       
+        
+        width: 24%;
+        height: 40%;
+        
+        white-space: wrap;
+
+    }
+    .blackyazi h2{
+        margin-top: 20px;
+        
+        
+        font-size: 1.5em;
+        color: rgb(213, 233, 233);
+       
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+
+ 
+    }
+
+    
+    .tanitimbtns{
+      
+    width: 420px;
+      
+       margin-top: 3em;
+       height: 3em;
+       display: flex; 
+     
+        justify-content: space-between;
+      
+   
+        
+    }
+    .myworkbtn{
+      
+        height: 100%;
+        width: 12rem;
+        text-align: center;
+        padding:12px;
+        /*font-size: 15px;*/
+        
+        z-index: 1;
+        /*width: 160px; */
+       /* width: 120px; */
+        
+       
+    
+       background-color:  #353333;
+       transition: 200ms ease;
+       cursor: pointer;
+   
+    }
+
+    .mymusicbtn{
+       
+        z-index: 1;
+       height: 100%;
+        width: 12rem;
+        text-align: center;
+        padding:12px;
+        /*font-size: 15px;*/
+        
+        cursor: pointer;
+        /*width: 160px; */
+       /* width: 120px; */
+      
+    
+       background-color: rgb(193,227,78);
+       transition: 200ms ease;
+               
+                    
+    }
+
+    .tanitimbtns a {
+       
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        
+            font-size: 20px;
+    
+      
+
+    color: #FFF9F9;
+
+    }
+
+    .mymusicbtn a{
+        color: black;
+    }
+
+    .mymusicbtn:hover{
+        background-color: #a81515;
+        
+        
+        }
+    
+    .myworkbtn:hover{
+        background-color: rgba(128, 128, 128, 0.336);
+    }
+    
+
+     .divider{
+        margin-top: 80px;
+        border-top: 3px solid #bbb;
+        width: 200%;
+    } 
+   
+    .section2{
+       
+        position: relative;
+        top: 10px;
+        
+        color: white;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+  
+    }
+    
+    .h1-container{
+        margin-top: 400px;
+        width: 50%;
+        height:320px;
+        margin-left: 6%;
+        margin-top: 400px;
+       
+    }
+
+    .h1-container h1{
+        letter-spacing: 2px;
+        font-size: 60px;
+
+    }
+
+
+   
+    .img-container{
+       
+        width: 50%;
+        height:800px;
+       
+        position: relative;
+        top: 46%;
+        left: 0px;
+     
+      
+        
+    }
+
+    .img-container img{
+        
+    
+        width:100%;
+        height: 100%;
+        transform:scaleX(-1);
+        
+       
+      
+    }
+
+
+    .p-container{
+        width: 50%;
+            padding-left: 100px;
+            margin-top: 180px;
+    }
+
+    .p-container p{
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+
+
+                    
+        
+    }
+
+    .proje-basligi {
+        align-self: center; 
+        position: relative; 
+        bottom: -1040px;
+        
+     }
+
+     .proje-basligi h1{
+         font-size: 80px;
+        letter-spacing: 1px;
+         color: white;
+     }
+
+
+
+    
+   
      .body-box{
         overflow-y: hidden;
        /* background-color: rgb(250, 242, 242); */
@@ -191,11 +341,13 @@
         background: rgb(31,46,72);
         background-color: rgb(15,22,32);
         background: linear-gradient(to bottom,rgb(15,22,32) 0%, #020808 100%, rgb(31,46,72) 50%);
+        background: transparent;
         border-radius: 15px;
         opacity: 0.9;
         position: absolute;
        /* top: 4.2%; */
-        top: 38%;
+        /* top: 38%; */
+        top: 300vh;
         align-self: center;
         width: 97%;
         /* min-height: 600px; */ 
@@ -242,7 +394,7 @@
   
     .body-box .cards {
         overflow: hidden;
-        background-color: rgb(199, 239, 247);
+        background-color: rgb(193, 227, 78);
         opacity: 1;
         margin-top: 20px;
         margin: 10px;
@@ -298,7 +450,7 @@
     }
 
     .modal-content{
-        background-color: white;
+        background-color: rgb(0, 0, 0);
         margin: 8% auto;
         padding:20px;
         border: 2px solid black;
@@ -312,7 +464,7 @@
     }
 
     .modal-content h1 {
-
+        color: greenyellow;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 1px;
     font-weight: bold;
@@ -328,6 +480,7 @@
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
         font-size:2vw;
+        color: white;
 
     }
 
@@ -335,7 +488,7 @@
    
     .popup-burger{
         position: absolute;
-    
+   
         top: 7%;
         right: 7%;
         width: 4%;
@@ -351,7 +504,7 @@
          width: 150%;
         height: 4px;
         /* background-color:#00CAE7; */
-        background-color: rgb(0, 0, 0);
+        background-color:greenyellow;
         transition: all 0.1s ease-in-out;
         transform: translateY(8px) rotate(45deg) scale(1.1);
   }
@@ -361,7 +514,7 @@
         width: 150%;
          height: 4px;
        /*  background-color: #00CAE7; */
-        background-color: rgb(0, 0, 0);
+        background-color: greenyellow;
         transition: all 0.1s ease-in-out;
         transform: rotate(-45deg) scale(1.1);
   }
@@ -466,6 +619,7 @@
         
         transform: scale(1.1);
         background-color: rgb(42, 175, 82);
+        background-color: white;
     
     }
     
@@ -489,7 +643,7 @@
  
      }
      .body-box .cards h1 a{
-        color: rgb(27, 93, 119);
+        color: rgb(0, 0, 0);
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-family: 'Orbitron', sans-serif;
         font-weight: 20px;
@@ -607,7 +761,7 @@
     .readmorea a{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-decoration: none;
-        color:rgb(27, 93, 119);
+        color:black;
         font-size: 25px;
         margin-right: 9px;
         transition: ease-in 350ms;
@@ -662,84 +816,21 @@
         transform: scale(1.2);
     }  
     
-   
-    /* .contactmeblock {
-        position: absolute;
-        top: 36%;
-        transform: translateX(50%);
-        left: -13.5%;
-        width: 500px;
-        height: 250px;
-        background-color: rgb(250, 242, 242);
-        opacity: 0.9;
-        border-radius: 15px;
-        
-    }
-  
-    .contactmeblock p{
-        display: none;
-    } */
-    
-    
-   /* .someblock{
-        position: relative;
-        right: 26%;
-        top: -150px;
-        transform: translateX(50%);
-        background-color: rgb(250, 242, 242);
-        opacity: 0.9;
-        width: 1000px;
-        height: 250px;
-        z-index: 1;
-        border-radius: 15px;
-    }
-
-
-    .someblock p{
-        display: none;
-    }
-     */
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  .logo{
-      position: absolute;
-      top: 3%;
-      left: 46%;
-      align-self: center;
-      z-index: 1px;
-      transition: 800ms ease;
-  }
-  
-  .logo:hover{
-      transform: rotate(-360deg);
-      filter: opacity(0.8);
-  }
-  
-  
+ 
   
   .navbar{
       
      position: fixed;
       top: 0;
       left: 0%;
-      background-color: rgb(19, 18, 18);
+      background-color: rgb(0, 0, 0);
       
-      height: 50px;
+      height: 49px;
       width: 100%;
       
       display: flex;
       justify-content: start;
+      z-index: 1;
        
 
   
@@ -747,7 +838,7 @@
 
     .button-wrapper{
         position: fixed;
-        top: 1%;
+        top: 9px;
         left: 0.5%;
        
         width: 50%;
@@ -757,24 +848,8 @@
 
     }
 
-   /* .navbar .contact-button-div{
-       
-       
-        position: fixed;
-        top: 0.9%;
-        right: 6%;
-        margin-right: 8px;
-        height: 35px;
-        width: 160px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        
-        stroke-width: 2px;
-        stroke: rgb(0, 0, 0);
-        
-
-    }   */
+   
+    
    
     .contact-button-div{
         margin-left: 10px;
@@ -797,14 +872,15 @@
         text-align: center;
         letter-spacing: 2px;
         text-transform: uppercase;
+        
     } 
 
        
     .contact-button-div .contact-button  {
-        border: 2px solid rgb(42, 175, 82);
+        border: 2px solid rgb(192,227, 87);
         background-color: rgb(19, 18, 18);
        
-        color: rgb(42, 175, 82);
+        color: rgb(255, 255, 255);
         padding: 5px 10px;
         /*font-size: 15px;*/
         font-size: 11px;
@@ -813,33 +889,19 @@
        /* width: 120px; */
        width: 100%;
        transition: all ease-in 200ms;
+      
         
       }
 
       .contact-button:hover{
           opacity: 0.9;
-          background-color: rgb(42, 175, 82);
+          background-color: rgb(248, 244, 244);
           color: rgb(19, 18, 18);
           transform: translateX(2px);
       }
       
           
-      /*.navbar .home-button-div {
-        
-        position: fixed;
-        top: 0.9%;
-        right: 17%;
-        margin-right: 8px;
-        height: 35px;
-        width: 100px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        
-        stroke-width: 2px;
-        stroke: rgb(0, 0, 0);
-        
-      } */
+      
 
      
 
@@ -859,24 +921,9 @@
         text-align: center;
         letter-spacing: 2px;
         text-transform: uppercase;
+        display: none;
       }
 
-     /* .home-button-div .home-button {
-        border: 2px solid  rgb(19, 18, 18);
-        background-color: rgb(42, 175, 82);
-        
-        
-        color: rgb(42, 175, 82);
-        padding: 5px 10px;
-        font-size: 20px;
-        cursor: pointer;
-       /* width: 200px; 
-       height: 40px;
-       width: 120px;
-        /* color: rgb(19, 18, 18); 
-        color: rgb(0, 0, 0);
-        font-style: bold;
-      }    */
       
 
       .home-button-div .home-button {
@@ -907,18 +954,7 @@
 
     
 
-    
-    
-    /* .navbar-contents{
-        list-style-type: none;
-        display: flex;                   content navbar'ın başında başlıyor. 
-        flex-direction: row;
-        width: 60%;
-        height: 100%;
-        padding-top: 5px;
-       
-       
-    } */ 
+  
 
 
     .navbar-contents{
@@ -931,14 +967,15 @@
         position: relative;
         
         align-self: center;
-        left: 40%;
+        left: 83%;
+        margin-right: 40px;
         top: 18%;
     }
      
     .navbar-contents a:hover {
          
          color: rgb(169, 237, 240); 
-        color: rgb(247, 253, 249);
+        color: rgb(192, 15, 15);
         transition: ease 400ms;
     }
      
@@ -948,7 +985,7 @@
         cursor: pointer;
         text-decoration: none;
         /* color: #00CAE7; */
-        color: rgb(42, 175, 82);
+        color: rgb(230, 236, 232);
         font-size: 18px;
         margin-left: 30px;
         z-index: 1;
@@ -977,38 +1014,22 @@
   
   
   
-  /* .nav-links{
-     
-     list-style: none;
-     position: absolute;
-     width: 30vh;
-     height: 100%;
-     top: 0;
-     right: 0px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     transform: translateX(100%);
-     transition: transform 400ms ease-out;
-     background: #49796B;
-     opacity: 0;
-     
+ 
 
       
        
        
-  } */   /* I have changed the animation to fade in */
+  /* I have changed the animation to fade in */
   
   .nav-link-container{
       
-      background-color: rgb(5, 18, 30);
+      background-color: rgb(0, 0, 0);
       position: fixed;
       top: 0;
       left: 0;
       height: 100%;
       width: 100%;
-      z-index: -2;
+      z-index: -8;
       opacity: 0;
       transition: opacity 300ms ease-out;
       display: flex;
@@ -1039,7 +1060,7 @@
     opacity: 1;
     transition: opacity 150ms ease-out;
     background: #d1f1e9; 
-    background-color: rgb(5, 18, 30);
+    background-color: rgb(0, 0, 0);
     
     
 
@@ -1096,15 +1117,14 @@
   }
   
   .nav-links li a:hover {
-      color: rgb(28, 35, 66);
+      color: rgb(241, 14, 14);
   }
   
   .nav-links  a{
        position: absolute;
        text-decoration: none;
-      /* color: rgb(253, 130, 15); */
-       color: #00CAE7;
-       color: rgb(42, 175, 82);
+      
+       color: rgb(255, 255, 255);
        font-family: Georgia, 'Times New Roman', Times, serif;
        font-size: 47px;
        z-index: 1;
@@ -1122,8 +1142,10 @@
         width: 20px;
         display: block;
         cursor: pointer;
-        z-index: 2;
+        
         opacity: 1;
+        display: none;
+        z-index: 2;
         
   }
   
@@ -1133,8 +1155,9 @@
       width: 110%;
       height: 4px;
       /*background-color:#00CAE7; */
-      background-color: rgb(42, 175, 82);
-      transition: all 1s ease-in-out;
+      background-color: rgb(255, 255, 255);
+      transition: all 600ms ease-out;
+      
   }
 
 
@@ -1144,8 +1167,8 @@
          width: 150%;
         height: 4px;
         /* background-color:#00CAE7; */
-        background-color: rgb(42, 175, 82);
-        transition: all 1s ease-in-out;
+        background-color: rgb(255, 255, 255);
+        transition: all 800ms ease-out
   }
   .burgerpiece3{
         border-radius: 5px;
@@ -1153,13 +1176,11 @@
         width: 150%;
          height: 4px;
        /*  background-color: #00CAE7; */
-        background-color: rgb(42, 175, 82);
-        transition: all 1s ease-in-out;
+        background-color: rgb(255, 255, 255);
+        transition: all 800ms ease-out;
   }
 
-  .burger:hover{
-    
-  }
+  
 
 
 
@@ -1213,26 +1234,34 @@
     .burger{
        margin-top: 3px;
        margin-right: 8px;
+       display: block;
     }
     
-    .green-rain1{
-        bottom: 10%;
+    
+    .blacksection{
+        height: 24%;
+   
     }
+    .tanitimbtns{
+        margin-top: 20px;
 
-    .green-rain3{
-        left: -100%;
     }
     
-    
-    
-    
-    body{
-            height: 80vh;
+    .blackbaslik h1{
+        font-size: 2.6em;
         
-      }
+    }
+    .blackbaslik{
+   
+        width: 26em;
+        height: 18em;
+    }
+    
+   
 
       .button-wrapper .contact-button{
           width: 120%;
+          
       }
       
       
@@ -1254,7 +1283,7 @@
         align-content: flex-start;
         flex-wrap: wrap;
         
-        top: 60%;
+        /*top: 60%; */
       }
       
       .body-box .cards{
@@ -1331,17 +1360,10 @@
           display: none;
       }
       .navbar-contents{
-        display: none;
+      margin-right: 800px;
+      display: none;
       }
 
-     /* .contact-button-div{
-          left: 2%;
-      }
-     
-      .home-button-div{
-         left: 20%;
-          margin-left: 50px;
-      } */
 
       .button-wrapper{
           left: 1%;
@@ -1359,7 +1381,7 @@
   }
   
 
-  @media only screen and (max-height: 820px ) and (min-width:1600px) {   /* 760 */
+  @media only screen and (max-height: 920px ) and (min-width:1600px) {   /* 760 */  /*1600*/
     
     .body-box{
       
@@ -1369,13 +1391,17 @@
        
         
     }
+   
     
-    
+    .blacksection{
+        height: 30%;
+    }
     
     .burger{
        
         margin-right: 16px;
         margin-top: 8px;
+     
 
     }
 
@@ -1426,7 +1452,7 @@
             height: 20%;
             flex-direction: row;
             
-            top:25%;
+          top: 25%;
           }
           
           .body-box .cards{
@@ -1449,7 +1475,7 @@
 
     
    .body-box{
-      
+     
      height: 50%;
       align-content: center;
       
@@ -1514,25 +1540,16 @@
     width: 200px;
 }
 
+    
 
 
 
-/* .cards .card-content::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 5px;
-}
-
-.cards .card-content::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-}
- */
 
   } 
 
 
-  @media only screen and (max-width: 538px ) { 
+  @media only screen and (max-width: 1040px ) { 
+    
     
     
     .modal-content{
@@ -1540,17 +1557,174 @@
         height: 40%;
     }
      
+    .navbar{
+        height: 50px;
+        
+     
+    }
+    .navbar-contents{
+        display: none;
+    }
     
-    .burger{
+    .blacksection{
+        height: 24em;
+    }
+    .blackbaslik{
+        margin-left: 2em;
+        
+    }
+
+    .blackbaslik h1{
+        font-size: 2.5em;
+    }
+
+    .blackyazi{
+            display: none;
+     }
+    
+    .tanitimbtns{
+        width: 22em;
+        margin-top: 40px;
+        
+    }
+    .tanitimbtns a{
+       font-size: 1.1em;
+    }
+    .scrollnav{
+        top: 28em;
+    }
+    .scrollnav a{
+        font-size: 1.7em;
+    }
+    .mymusicbtn{
+     width: 10em;
+    }
+    .myworkbtn{
+        width: 10em;
+    }
+     .burger{
         right: 6%;
+        display: block;
     }
 
     .bg-img{
-        overflow: hidden;
+        background-position-x: -30vh;
+        background-size: 170vh;
+       
+
     }
 
+    .button-wrapper {
+        top: 11px;
+    }
 
+    .green-rain2{
+        position: absolute;
+        top: 300px;
+        left: -24%;
+        width: 360px;
+        height: 1px;
+}
+
+
+
+  }
+
+
+
+  @media only screen and (max-width: 520px ) { 
+      
+
+    .blacksection{
+        top: 240px;
+    }
+ 
+    .bg-img { 
+        background-position-x: left;
+    }
     
+    .blackbaslik{
+        margin-left: 2em;
+        width: 10em;
+        
+    }
+
+    .blackbaslik h1{
+        font-size: 2.5em;
+    }
+
+    .blackyazi{
+            display: none;
+     }
+    
+    .tanitimbtns{
+        width: 15em;
+        margin-top: 40px;
+        
+    }
+    .tanitimbtns a{
+       font-size: 0.8em;
+    }
+    .scrollnav{
+        top: 25em;
+    }
+    .scrollnav a{
+        font-size: 1.6em;
+    }
+    .mymusicbtn{
+        width: 7em;
+        height:2.5em;
+    }
+    .myworkbtn{
+        width: 7em;
+        height:2.5em;
+    }
+
+    .h1-container{
+      margin-top: 280px;
+      width: 290px;
+   
+    }
+   
+    .h1-container h1{
+        letter-spacing: 2px;
+        font-size: 30px;
+
+    }
+    .divider{
+        width: 100%;
+        margin-top: 30px;
+        border-radius: 5px;
+    }
+    .img-container{
+  
+        height:200px;
+        width: 400px;
+        left: -50%;
+        margin-top: 220px;
+        
+    }
+
+    .img-container img{
+    width: 200%;
+    height: 140%;
+    } 
+    
+    .proje-basligi h1 {
+        color: white;  font-size-adjust: initial; font-size:60px;
+    }
+
+    .p-container{
+       
+             width: 80%;
+            padding-left: 30px;
+    }
+
+    .p-container p{
+        color: white;
+        
+        font-size: 26px;
+    }
 
 
   }

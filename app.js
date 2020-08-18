@@ -22,10 +22,31 @@ const navSlide = () => {
  }
  
 
+    function scroller() {
+        var ball1 = document.getElementById("scroll1")
+       
+        
+        
+        ball1.addEventListener("click", () => {
+            ball1.style.color = "red";
+           
+    });
+        
+           
+        
+   
+   
+   
+   
+   
+    }
+
+
+
     function bodyboxslide() {
 
         var bodybox = document.querySelector = (".body-box");
-        var boxposition = document.getBoundingClientRect().top; 
+        var boxposition = bodybox.getBoundingClientRect().top; 
         var scrposition = window.innerHeight / 2;
 
         if(scrposition > boxposition) {
@@ -92,10 +113,6 @@ const popUp = () => {
         bodybox.classList.toggle(".body-box .cards1");
 
     });
-
-
-
-
 
 
 }
@@ -222,7 +239,7 @@ function displayModal4() {
   
 } 
 
-
+   
 
 function animateBurger() {
     var toggle = false
@@ -234,10 +251,10 @@ function animateBurger() {
     burger.addEventListener("click" , () => {
         
         if(toggle == false ) { 
+        
         burger1.style.opacity = 0; 
         burger2.style.transform = "translateY(8px) rotate(45deg) scale(1.2) ";
         burger3.style.transform = "rotate(-45deg) scale(1.2)"; 
-       
         toggle = true;
         }
         else{
@@ -254,65 +271,34 @@ function animateBurger() {
 }
 
 
-function firstAnime() {
-   
-    
-
-    anime({ //alt
-
-         targets:'#greenrain1',
-         scaleY: '1200',
-         translateY: '-150',
-         direction:'alternate',
-         duration:11000,
-         
-         easing: 'easeInOutQuad'
 
 
-    });
-
-    anime({ //üst
-        targets:'#greenrain2',
-        scaleY: '1200',
-        translateY: '200',
-        
-        
-        
-        
-        duration:12000,
-        
-        easing: 'easeInOutQuad' 
 
 
-    });
 
-    anime({
-        targets:'#greenrain3',
-        width: '200',
-        translateX: '400',
-        
-        
-        
-        duration:3000,
-      
-        easing: 'easeInOutQuad' 
-
-
-    });
-
-  }   
-
-
+ 
   
  
- firstAnime()
-animateBurger()
+  function goContact() {
+    window.location.replace("contact.html");
+  }
+
+  function goHTML(X) {
+    
+    window.location.replace(X.value);
+  }
+
+
+
+ 
 displayModal()
 displayModal1()
 displayModal2()
 displayModal3()
 displayModal4()
-navSlide();
+
+ navSlide()
+ animateBurger();
 
 
  //window.addEventListener('scroll', bodyboxslide());
