@@ -124,17 +124,17 @@ const popUp = () => {
     var close = document.getElementById("popup-burger");
     
     card.onclick = function() {
-        modal.style.display = "block";
+        modal.style.top = "0%";
         
     }
     close.onclick = function() {
-        modal.style.display = "none";
+        modal.style.top = "-100%";
     }
     
     window.onclick = function(clicker) {
        
         if(clicker.target == modal) {
-        modal.style.display = "none";
+        modal.style.top = "-100%";
        
     }
     }          
@@ -146,17 +146,18 @@ const popUp = () => {
     var card1 = document.getElementById("card1");
     var close1 = document.getElementById("popup-burger1");
     card1.onclick = function() {
-        modal1.style.display = "block";
-        
+        modal1.style.top = "0%";
+  
     }
+    
     close1.onclick = function() {
-        modal1.style.display = "none";
+        modal1.style.top = "-100%";
     }
     
     window.onclick = function(clicker) {
        
         if(clicker.target == modal1) {
-        modal1.style.display = "none";
+        modal1.style.top = "-100%";
        
     }
     }          
@@ -168,17 +169,17 @@ function displayModal2(){
     var card2 = document.getElementById("card2");
     var close2 = document.getElementById("popup-burger2");
     card2.onclick = function() {
-        modal2.style.display = "block";
+        modal2.style.top= "0%";
         
     }
     close2.onclick = function() {
-        modal2.style.display = "none";
+        modal2.style.top = "-100%";
     }
     
     window.onclick = function(clicker) {
        
         if(clicker.target == modal2) {
-        modal2.style.display = "none";
+        modal2.style.top = "-100%";
        
     }
     }          
@@ -191,17 +192,17 @@ function displayModal3() {
     var card3 = document.getElementById("card3");
     var close3 = document.getElementById("popup-burger3");
     card3.onclick = function() {
-        modal3.style.display = "block";
+        modal3.style.top= "0%";
         
     }
     close3.onclick = function() {
-        modal3.style.display = "none";
+        modal3.style.top = "-100%";
     }
     
     window.onclick = function(click) {
        
         if(click.target == modal3) {
-        modal3.style.display = "none";
+        modal3.style.top = "-100%";
        
     }
     }          
@@ -217,20 +218,20 @@ function displayModal4() {
   
     
     card4.onclick = function() {
-        modal4.style.display = "block";
+        modal4.style.top = "0%";
         isPop = true;
         
     }
     
     close4.onclick = function() {
-        modal4.style.display = "none";
+        modal4.style.top = "-100%";
         isPop = false;
     }         
     
     window.onclick = function() {
        
         if(click.target == modal3) {
-        modal4.style.display = "none";
+        modal4.style.top = "-100%";
     }
     
     
