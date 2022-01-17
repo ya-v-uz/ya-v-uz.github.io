@@ -2,46 +2,24 @@ const navSlide = () => {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".nav-link-container");
     let navbarOpen = false;
-    
-   
-     
-     
+
     burger.addEventListener("click", () => {
         nav.classList.toggle("nav-active");
 
-        
-        
-    
-    
     });
     
-   
-    
- 
- 
  }
  
-
     function scroller() {
         var ball1 = document.getElementById("scroll1")
-       
-        
-        
+
         ball1.addEventListener("click", () => {
             ball1.style.color = "red";
            
     });
-        
-           
-        
-   
-   
-   
-   
+       
    
     }
-
-
 
     function bodyboxslide() {
 
@@ -55,12 +33,6 @@ const navSlide = () => {
 
     }
 
-
-    
-
-
-
-
     const socialSlide = () => {
     let social = false; 
     var skype = document.getElementById("skype");
@@ -72,11 +44,9 @@ const navSlide = () => {
     const contactblock = document.querySelector(".contactmeblock");
     const contactactive = document.querySelector(".contactmeblock-active");
 
-
     skype.addEventListener("hover", () => {
         contactactive.classList.toggle("contactmeblock-active");
         social = true;
-    
     
     });
 
@@ -84,17 +54,8 @@ const navSlide = () => {
 
     
 
-
-
-
-
-
  function go404() {
-     
-    
     window.location.replace("404.html");
-
- 
 }
   
   
@@ -106,8 +67,6 @@ const navSlide = () => {
 const popUp = () => {
     const card= document.getElementsByClassName(".cards")
     const bodybox = document.querySelectorAll(".body-box")
-
-
     card.addEventListener("click", () => {
 
         bodybox.classList.toggle(".body-box .cards1");
@@ -233,14 +192,11 @@ function displayModal4() {
         if(click.target == modal3) {
         modal4.style.top = "-100%";
     }
-    
-    
 
 }          
   
 } 
 
-   
 
 function animateBurger() {
     var toggle = false
@@ -267,19 +223,8 @@ function animateBurger() {
    
     });
 
-     
-
 }
 
-
-
-
-
-
-
- 
-  
- 
   function goContact() {
     window.location.replace("contact.html");
   }
@@ -289,9 +234,6 @@ function animateBurger() {
     window.location.replace(X.value);
   }
 
-
-
- 
 displayModal()
 displayModal1()
 displayModal2()
